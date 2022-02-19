@@ -1,0 +1,25 @@
+<ion-item lines="none">
+  <ion-toggle (ionChange)="onClick($event)" slot="end"></ion-toggle>
+  <ion-title>Grafikonok, statisztikák</ion-title>
+</ion-item>
+<ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+  <ion-header>
+    <ion-toolbar class="nav">
+      <ion-title class="nav_title">Navigáció</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item [routerLink]="['/profile-details']" class="nav_item">Felhasználói adatok</ion-item>
+      <ion-item [routerLink]="['/connected-devices']" class="nav_item">Kapcsolt eszközök</ion-item>
+      <ion-item [routerLink]="['/manual-input']" class="nav_item">Manuális adatbevitel</ion-item>
+      <ion-item [routerLink]="['/charts-statistics']" class="nav_item">Grafikonok, statisztikák</ion-item>
+      <ion-item [routerLink]="['/settings']"class="nav_item">Beállítások</ion-item>
+      <ion-item [routerLink]="['/login']" class="nav_item">Bejelentkezés</ion-item>
+      <ion-item [routerLink]="['/registration']" class="nav_item">Regisztráció</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-content>
+
+</ion-content>

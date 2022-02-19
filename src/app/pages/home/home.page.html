@@ -1,0 +1,23 @@
+<ion-item lines="none">
+  <ion-toggle (ionChange)="onClick($event)" slot="end"></ion-toggle>
+  <ion-title>Hogyan szeretné folytatni?</ion-title>
+</ion-item>
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button class="gomb" [routerLink]="['/registration']" expand="block" color="darkgrey">Regisztráció</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+        <ion-button class="gomb" [routerLink]="['/login']" expand="block" color="darkgrey">Bejelentkezés</ion-button>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+        <ion-button class="gomb" [routerLink]="['/menu']" expand="block" color="darkgrey">Vendég</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
