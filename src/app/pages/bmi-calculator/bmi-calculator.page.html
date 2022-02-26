@@ -1,6 +1,6 @@
 <ion-item lines="none">
   <ion-toggle (ionChange)="onClick($event)" slot="end"></ion-toggle>
-  <ion-title>Kapcsolt eszközök</ion-title>
+  <ion-title>BMI Calculator</ion-title>
 </ion-item>
 <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
   <ion-header>
@@ -21,5 +21,31 @@
   </ion-content>
 </ion-menu>
 <ion-content>
-
+  <ion-content>
+    <form>
+      <ion-item lines="full">
+        <ion-label position="floating">Weight:</ion-label>
+        <ion-input type="number" required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Height:</ion-label>
+        <ion-input type="number" required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Age:</ion-label>
+        <ion-input type="number" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gender:</ion-label>
+        <ion-select>
+          <ion-select-option value="female">Female</ion-select-option>
+          <ion-select-option value="male">Male</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button class="gomb" type="submit" color="darkgrey" expand="block">Save</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
 </ion-content>

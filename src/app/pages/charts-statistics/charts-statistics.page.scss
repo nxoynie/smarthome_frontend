@@ -8,3 +8,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
+.nav_item{
+    --ripple-color: transparent;
+    --background-activated: transparent;
+    pointer-events:none;
+}
+ion-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ion-button{
+    --background: darkgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ion-grid{
+    display:block;
+    padding:20% 10% 10% 10%;
+}

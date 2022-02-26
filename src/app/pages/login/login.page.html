@@ -1,21 +1,21 @@
 <ion-item lines="none">
     <ion-toggle (ionChange)="onClick($event)" slot="end"></ion-toggle>
-    <ion-title>Bejelentkezés</ion-title>
+    <ion-title>Login</ion-title>
 </ion-item>
 <ion-content>
   <form>
     <ion-item lines="full">
-      <ion-label position="floating">Email vagy felhasználónév</ion-label>
+      <ion-label position="floating">Email or Username:</ion-label>
       <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Jelszó</ion-label>
+      <ion-label position="floating">Password:</ion-label>
       <ion-input type="password" required></ion-input>
     </ion-item>
     <ion-row>
       <ion-col>
-        <ion-button class="gomb" type="submit" color="darkgrey" expand="block">Bejelentkezés</ion-button>
-        <a [routerLink]="['/forgot-password']" class="small-text">Elfelejtett jelszó</a>
+        <ion-button class="gomb" type="submit" color="darkgrey" expand="block">Login</ion-button>
+        <a [routerLink]="['/forgot-password']" class="small-text">Forgot password</a>
       </ion-col>
     </ion-row>
   </form>

@@ -19,3 +19,8 @@ ion-grid{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
+.nav_item{
+        --ripple-color: transparent;
+        --background-activated: transparent;
+        pointer-events:none;
+    }

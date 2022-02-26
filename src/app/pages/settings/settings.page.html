@@ -5,18 +5,18 @@
 <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
   <ion-header>
     <ion-toolbar class="nav">
-      <ion-title class="nav_title">Beállítások</ion-title>
+      <ion-title class="nav_title">Navigation</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item [routerLink]="['/profile-details']" class="nav_item">Felhasználói adatok</ion-item>
-      <ion-item [routerLink]="['/connected-devices']" class="nav_item">Kapcsolt eszközök</ion-item>
-      <ion-item [routerLink]="['/manual-input']" class="nav_item">Manuális adatbevitel</ion-item>
-      <ion-item [routerLink]="['/charts-statistics']" class="nav_item">Grafikonok, statisztikák</ion-item>
-      <ion-item [routerLink]="['/settings']"class="nav_item">Beállítások</ion-item>
-      <ion-item [routerLink]="['/login']" class="nav_item">Bejelentkezés</ion-item>
-      <ion-item [routerLink]="['/registration']" class="nav_item">Regisztráció</ion-item>
+      <ion-item [routerLink]="['/profile-details']" class="nav_item">Profile details</ion-item>
+      <ion-item [routerLink]="['/connected-devices']" class="nav_item">Connected devices</ion-item>
+      <ion-item [routerLink]="['/manual-input']" >Manual data input</ion-item>
+      <ion-item [routerLink]="['/charts-statistics']" >Graphs and Statistics</ion-item>
+      <ion-item [routerLink]="['/settings']"class="nav_item">Setting</ion-item>
+      <ion-item [routerLink]="['/login']" >Login</ion-item>
+      <ion-item [routerLink]="['/registration']" >Registration</ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>

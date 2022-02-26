@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'charts-statistics',
     loadChildren: () => import('./pages/charts-statistics/charts-statistics.module').then( m => m.ChartsStatisticsPageModule)
+  },
+  {
+    path: 'bmi-calculator',
+    loadChildren: () => import('./pages/bmi-calculator/bmi-calculator.module').then( m => m.BmiCalculatorPageModule)
   }
 ];
 
